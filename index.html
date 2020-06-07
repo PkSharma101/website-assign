@@ -609,41 +609,70 @@
         </div>
       </div>
       <div class="row">
-        <form class="col s12">
+        <form class="gform col s12" method="POST" data-email="sembreaks.care@gmail.com"
+        action="https://script.google.com/macros/s/AKfycbxMHHCtJoFTp0tMriw-7stf_WMekc7ldUAggroJSw/exec">
+
+          <div class="form-elements">
           <div class="row">
             <div class="input-field col s12 m6 l4 offset-m3 offset-l4">
-              <input id="name" type="text" class="validate">
+              <input id="name" name="name" type="text" class="validate"  required>
               <label for="name">Your Name</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12 m6 l4 offset-m3 offset-l4">
-              <input id="email" type="email" class="validate">
+              <input id="email" name="email" type="email" class="validate"  required>
               <label for="email">Your Email</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12 m6 l4 offset-m3 offset-l4">
-              <input id="phone" type="tel" class="validate">
+              <input id="phone" name="phone" type="tel" class="validate"  required>
               <label for="phone">Phone</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12 m6 l4 offset-m3 offset-l4">
-              <input id="subject" type="text" class="validate">
-              <label for="subject">Subject</label>
+              <input id="topic" name="topic" type="text" class="validate"  required>
+              <label for="topic">Assignment Topic</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12 m6 l4 offset-m3 offset-l4">
-              <textarea id="message" class="materialize-textarea"></textarea>
-              <label for="message">Message</label>
+              <input id="link" name="link" type="text" class="validate"  required>
+              <label for="link">Assignment G-Drive Link</label>
             </div>
           </div>
+
+          <div class="row">
+            <div class="input-field col s12 m6 l4 offset-m3 offset-l4"  >
+          <label for="date" class="active">Date of Submission</label>
+          <input id="date" type="date" name="date" required/>  
+        </div>
+      </div>
+
+
+          <div class="row">
+            <div class="input-field col s12 m6 l4 offset-m3 offset-l4">
+              <textarea id="Instructions" name="Instructions" class="materialize-textarea"></textarea>
+              <label for="Instructions">Additional Instructions</label>
+            </div>
+          </div>
+
+          
           <div class="row">
             <div class="input-field col s12 m6 l4 offset-m3 offset-l4 center">
-              <input class="waves-effect waves-light btn" value="Send" type="submit"></div>
+              <button class=" btn btn-success btn-xlarge waves-effect waves-light">
+                <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
           </div>
+          </div>
+        </div>
+
+            <!-- Customise the Thankyou Message People See when they submit the form: -->
+         <div class="thankyou_message col s12" style="display:none;">
+          <h3 class="center"><em>Thanks</em> for contacting us!<br>
+             We will get back to you soon!</h3>
+         </div>
         </form>
       </div>
     </div>
@@ -717,5 +746,7 @@
 <script src="lib/slick/slick/slick.min.js"></script>
 <!-- Custom script -->
 <script src="js/custom.js"></script>
+<script data-cfasync="false" src="form-submission-handler.js"></script>
+
 </body>
 </html>
