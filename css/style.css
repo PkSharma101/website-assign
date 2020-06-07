@@ -537,9 +537,9 @@ nav .side-nav .profile .balance span {
   font-weight: 600; }
 
 nav .side-nav .profile .li-profile-info img {
-  border-radius: 50%;
-  width: 80px;
-  height: 80px; }
+  border-radius: 0%;
+  width: 200px;
+  height: 200px; }
 
 nav .side-nav .profile h2 {
   font-size: 20px;
@@ -1202,62 +1202,6 @@ nav a.button-collapse {
   height: auto;
   border-radius: 10px; }
 
-/*==================================================
-13. SUBSCRIBE
-==================================================*/
-.section.subscribe {
-  position: relative;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  overflow: hidden; }
-
-.section.subscribe .bg-subscribe {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  opacity: 0.2; }
-
-.section.subscribe .bg-subscribe img {
-  width: 100%;
-  height: auto;
-  max-height: 999999px; }
-
-.section.subscribe .mail-subscribe-box {
-  position: relative;
-  padding-bottom: 35px;
-  margin-top: 20px;
-  padding: 0px 20px; }
-
-.section.subscribe .mail-subscribe-box input {
-  color: #303030;
-  border: 1px solid #9428b4;
-  height: 50px;
-  background: #ffffff;
-  border-radius: 90px;
-  margin-bottom: 0px;
-  padding: 10px 50px 10px 20px;
-  box-sizing: border-box; }
-
-.section.subscribe .mail-subscribe-box i {
-  position: absolute;
-  color: #9428b4;
-  font-size: 18px;
-  border: 1px solid #9428b4;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  border-radius: 100%;
-  padding: 4px 8px 4px 10px;
-  right: 30px;
-  top: 11px;
-  cursor: pointer;
-  width: 28px;
-  height: 28px; }
-
-#page-content #subscribe-page {
-  bottom: -2px; }
 
 /*==================================================
 14. SETTING
@@ -1343,7 +1287,8 @@ form .file-field .file-path-wrapper .file-path {
 ==================================================*/
 .section.testimonial {
   margin-top: 10px;
-  background-color: #9428b4;
+  background-image: linear-gradient(to left,#bc2af2,#9428b4,#e061c7);
+  
   color: #ffffff;
   padding-top: 20px;
   position: relative;
